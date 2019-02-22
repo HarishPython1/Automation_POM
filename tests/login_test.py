@@ -26,7 +26,7 @@ class TestLogin:
             hp.click_on_logout_link()
 
             x = driver.title
-            assert x == 'actiTIME - Logi'
+            assert x == 'actiTIME - Login'
         except AssertionError as e:
             print(e)
             cur_time = moment.now().strftime("%d-%m-%Y_%H-%M-%S")
